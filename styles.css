@@ -1,102 +1,103 @@
 :root {
-    --twint-purple: #6f2c91;
-    --twint-light-purple: #9b59b6;
+    --twint-purple: #00a651; /* Changed from purple to green */
+    --twint-light-purple: #4caf50; /* Changed to lighter green */
     --twint-background: #f5f5f7;
     --twint-text: #333333;
-    --twint-success: #4CAF50;
-  }
-  
-  * {
+    --twint-success: #00a651; /* Changed to match main green */
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--twint-background);
     color: var(--twint-text);
     line-height: 1.6;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
     min-height: 100vh;
-  }
-  
-  .header {
+}
+
+.header {
     text-align: center;
     margin-bottom: 30px;
     padding: 10px 0;
-  }
-  
-  .header-logo {
-    height: 40px;
-  }
-  
-  .balance-card {
+}
+
+.header h1 {
+    color: var(--twint-purple);
+    font-size: 28px;
+}
+
+.balance-card {
     background-color: var(--twint-purple);
     color: white;
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .balance-label {
+}
+
+.balance-label {
     font-size: 14px;
     opacity: 0.9;
-  }
-  
-  .balance-amount {
+}
+
+.balance-amount {
     font-size: 28px;
     font-weight: bold;
     margin-top: 5px;
-  }
-  
-  .payment-form {
+}
+
+.payment-form {
     background-color: white;
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 30px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .payment-form h2 {
+}
+
+.payment-form h2 {
     color: var(--twint-purple);
     margin-bottom: 20px;
     font-size: 20px;
-  }
-  
-  .input-group {
+}
+
+.input-group {
     margin-bottom: 20px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
     color: #555;
-  }
-  
-  input {
+}
+
+input {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
     transition: border 0.3s;
-  }
-  
-  input:focus {
+}
+
+input:focus {
     border-color: var(--twint-purple);
     outline: none;
-  }
-  
-  .pay-button {
+}
+
+.pay-button {
     background-color: var(--twint-purple);
     color: white;
     border: none;
@@ -110,48 +111,48 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s;
-  }
-  
-  .pay-button:hover {
+}
+
+.pay-button:hover {
     background-color: var(--twint-light-purple);
-  }
-  
-  .twint-logo {
+}
+
+.twint-logo {
     height: 20px;
     margin-right: 10px;
     filter: brightness(0) invert(1);
-  }
-  
-  .transactions-section {
+}
+
+.transactions-section {
     margin-top: 30px;
-  }
-  
-  .transactions-section h2 {
+}
+
+.transactions-section h2 {
     color: var(--twint-purple);
     margin-bottom: 15px;
     font-size: 20px;
-  }
-  
-  .transactions {
+}
+
+.transactions {
     background-color: white;
     border-radius: 12px;
     padding: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
-  
-  .no-transactions {
+}
+
+.no-transactions {
     color: #888;
     text-align: center;
     padding: 20px 0;
-  }
-  
-  /* Success View Styling */
-  .success-view {
+}
+
+/* Success View Styling */
+.success-view {
     text-align: center;
     padding-top: 60px;
-  }
-  
-  .success-icon {
+}
+
+.success-icon {
     background-color: var(--twint-success);
     color: white;
     width: 80px;
@@ -162,63 +163,63 @@
     justify-content: center;
     font-size: 40px;
     margin: 0 auto 30px;
-  }
-  
-  .success-view h1 {
+}
+
+.success-view h1 {
     color: var(--twint-success);
     margin-bottom: 20px;
-  }
-  
-  .success-amount {
+}
+
+.success-amount {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .success-recipient {
+}
+
+.success-recipient {
     font-size: 18px;
     color: #555;
     margin-bottom: 40px;
-  }
-  
-  .full-width {
+}
+
+.full-width {
     width: 100%;
-  }
-  
-  /* Transaction item styling */
-  .transaction-item {
+}
+
+/* Transaction item styling */
+.transaction-item {
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
     border-bottom: 1px solid #eee;
-  }
-  
-  .transaction-item:last-child {
+}
+
+.transaction-item:last-child {
     border-bottom: none;
-  }
-  
-  .transaction-details {
+}
+
+.transaction-details {
     display: flex;
     flex-direction: column;
-  }
-  
-  .transaction-recipient {
+}
+
+.transaction-recipient {
     font-weight: 500;
-  }
-  
-  .transaction-date {
+}
+
+.transaction-date {
     font-size: 14px;
     color: #888;
-  }
-  
-  .transaction-amount {
+}
+
+.transaction-amount {
     font-weight: 500;
-  }
-  
-  .transaction-amount.sent {
+}
+
+.transaction-amount.sent {
     color: #e74c3c;
-  }
-  
-  .transaction-amount.received {
+}
+
+.transaction-amount.received {
     color: #2ecc71;
-  }
+}
